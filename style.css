@@ -59,13 +59,17 @@ img{
 
 /* Structure */
 
+.container{
+    padding: 10px;
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;
 }
 
-.container{
-    padding: 5px;
+[class^='column']{
+    text-align: center;
 }
 
 .jc-center{
@@ -76,12 +80,8 @@ img{
     flex-direction: row-reverse;
 }
 
-.jc-sbetween{
-    justify-content: space-between;
-}
-
-[class^='column']{
-    text-align: center;
+.low-pad{
+    padding-top: 5px;
 }
 
 .u-border{
@@ -92,9 +92,14 @@ img{
     padding-bottom: 0;
 }
 
+.jc-sbetween{
+    justify-content: space-between;
+}
+
 .space-tb{
     padding: 10px 0;
 }
+
 
 
 /* Background-color */
