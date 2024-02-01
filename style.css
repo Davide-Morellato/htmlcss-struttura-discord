@@ -36,7 +36,7 @@ img{
 }
 
 .column-40{
-    width: calc(100% / 2.5);
+    flex-basis: calc(100% / 2.5);
 }
 
 .column-x{
@@ -56,11 +56,19 @@ img{
 }
 
 
+
 /* Structure */
 
 .row{
     display: flex;
     flex-wrap: wrap;
+}
+
+.container{
+    padding: 5px;
+}
+
+.jc-center{
     justify-content: center;
 }
 
@@ -68,7 +76,7 @@ img{
     flex-direction: row-reverse;
 }
 
-.opposite{
+.jc-sbetween{
     justify-content: space-between;
 }
 
@@ -76,8 +84,16 @@ img{
     text-align: center;
 }
 
+.u-border{
+    border-top: 0.5px solid white;
+}
+
+.no-padding{
+    padding-bottom: 0;
+}
+
 .space-tb{
-    margin: 20px 0;
+    padding: 10px 0;
 }
 
 
@@ -124,7 +140,6 @@ img{
 
 .debug .container{
     border: 2px solid black;
-    padding: 10px;
 }
 
 .debug .row{
