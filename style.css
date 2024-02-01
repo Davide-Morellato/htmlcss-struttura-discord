@@ -39,7 +39,7 @@ img{
     width: calc(100% / 2.5);
 }
 
-.column-60{
+.column-x{
     flex-grow: 1;
 }
 
@@ -74,6 +74,10 @@ img{
 
 [class^='column']{
     text-align: center;
+}
+
+.space-tb{
+    margin: 20px 0;
 }
 
 
